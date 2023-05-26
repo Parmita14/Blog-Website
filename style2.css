@@ -1,0 +1,76 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+font-size: xx-large;
+}
+.container{
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
+    grid-area: 
+    "content sidebar" ;
+}
+.content{
+    display: grid;
+    grid-template-rows: 60px 10px 150px 50px 20px 40px;
+ grid-template-areas:     
+    "sample"
+    "date"
+    "scontent"
+    "bcontent"
+    "box"
+    "block";
+}
+.sample{
+    grid-area: sample;
+}
+.date{
+    grid-area: date;
+}
+.scontent{
+    grid-area: scontent;
+}
+.bcontent{
+    border: 1px solid gray;
+    grid-area: bcontent;
+    padding: 3px;
+}
+.heading{
+    
+    font-size: larger;
+}
+.box{
+    border: 1px solid gray;
+    padding: 3px;
+    grid-area: box;
+    margin-bottom: 20px;
+}
+.subheading{
+    font-size: larger;
+}
+.block{
+    grid-area: block;
+}
+button{
+    justify-content: center;
+    align-content: center;
+    border-radius: 30%;
+}
+.sidebar{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 175px 189px 130px ;
+    grid-template-areas: 
+    "about"
+    "archives"
+    "elsewhere";
+}
+.about{
+    background-color: rgb(215, 214, 214);
+    padding: 7px;
+}
